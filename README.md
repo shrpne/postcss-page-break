@@ -9,18 +9,16 @@
 ```css
 /* before */
 .foo {
-    break-inside: avoid;
-    
-    break-after: page;
+  break-inside: avoid;
+  break-after: page;
 }
 
 /* after */
 .foo {
-  break-inside: avoid;
   page-break-inside: avoid;
-  
-  break-after: page;
+  break-inside: avoid;
   page-break-after: always;
+  break-after: page;
 }
 ```
 
