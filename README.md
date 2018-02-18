@@ -64,7 +64,7 @@ break-after: unset        =>  page-break-after: unset;
 ## Usage
 
 ```js
-postcss([ require('PLUGIN_NAME') ])
+postcss([ require('postcss-page-break') ])
 ```
 
-See [PostCSS] docs for examples for your environment.
+See [PostCSS] docs for examples for your environment (webpack, gulp, grunt).
