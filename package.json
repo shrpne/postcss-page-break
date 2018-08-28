@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/shrpne/postcss-page-break",
   "dependencies": {
-    "postcss": "^6.0.16"
+    "postcss": "^7.0.2"
   },
   "devDependencies": {
     "eslint": "^4.15.0",
