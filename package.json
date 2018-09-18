@@ -1,6 +1,6 @@
 {
   "name": "postcss-page-break",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "PostCSS plugin postcss-page-break to fallback `break-` properties with `page-break-` alias",
   "keywords": [
     "postcss",
