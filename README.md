@@ -1,10 +1,18 @@
-# postcss-page-break [![Build Status][ci-img]][ci]
+# postcss-page-break 
+
+[![NPM Package][npm-img]][npm]
+[![Build Status][ci-img]][ci]
+[![License: MIT][mit-img]][mit]
 
 [PostCSS] plugin to fallback `break-` properties with `page-break-` alias.
 
 [PostCSS]: https://github.com/postcss/postcss
+[npm-img]: https://img.shields.io/npm/v/postcss-page-break.svg
+[npm]:     https://www.npmjs.org/package/postcss-page-break
 [ci-img]:  https://travis-ci.org/shrpne/postcss-page-break.svg
 [ci]:      https://travis-ci.org/shrpne/postcss-page-break
+[mit-img]: https://img.shields.io/badge/License-MIT-yellow.svg
+[mit]:     https://github.com/shrpne/postcss-page-break/blob/master/LICENSE
 
 ```css
 /* before */
