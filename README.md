@@ -6,6 +6,8 @@
 
 [PostCSS] plugin to fallback `break-` properties with `page-break-` alias.
 
+[!['Can I use' table](https://caniuse.bitsofco.de/image/multicolumn.png)](https://caniuse.com/#feat=multicolumn)
+
 [PostCSS]: https://github.com/postcss/postcss
 [npm-img]: https://img.shields.io/npm/v/postcss-page-break.svg
 [npm]:     https://www.npmjs.org/package/postcss-page-break
