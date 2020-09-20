@@ -22,21 +22,17 @@
     "postcss": "^7.0.2"
   },
   "devDependencies": {
-    "eslint": "^4.15.0",
-    "eslint-config-postcss": "^2.0.2",
-    "jest": "^21.0.0"
+    "eslint": "^7.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-unicorn": "^22.0.0",
+    "jest": "^26.4.2"
   },
   "scripts": {
-    "test": "jest && eslint *.js"
-  },
-  "eslintConfig": {
-    "extends": "eslint-config-postcss/es5",
-    "rules": {
-      "indent": ["error", 4, { "SwitchCase": 1 }],
-      "max-len": ["off"]
-    },
-    "env": {
-      "jest": true
-    }
+    "test": "jest && npm run lint",
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix"
   }
 }

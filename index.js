@@ -1,16 +1,16 @@
-var postcss = require('postcss');
+const postcss = require('postcss');
 
-module.exports = postcss.plugin('postcss-page-break', function () {
+module.exports = postcss.plugin('postcss-page-break', function() {
 
-    return function (root) {
+    return function(root) {
 
-        root.walkDecls(/^break-(inside|before|after)/, function (decl) {
+        root.walkDecls(/^break-(inside|before|after)/, function(decl) {
             // do not process column|region related properties
             if (decl.value.search(/column|region/) >= 0) {
                 return;
             }
 
-            var newValue;
+            let newValue;
             switch (decl.value) {
                 case 'page':
                     newValue = 'always';
@@ -24,7 +24,7 @@ module.exports = postcss.plugin('postcss-page-break', function () {
 
             decl.cloneBefore({
                 prop: 'page-' + decl.prop,
-                value: newValue
+                value: newValue,
             });
         });
 
