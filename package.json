@@ -1,7 +1,15 @@
 {
   "name": "postcss-page-break",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "PostCSS plugin postcss-page-break to fallback `break-` properties with `page-break-` alias",
+  "files": [
+    "/index.js"
+  ],
+  "scripts": {
+    "test": "jest && npm run lint",
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix"
+  },
   "keywords": [
     "postcss",
     "css",
@@ -30,10 +38,5 @@
     "eslint-plugin-unicorn": "^22.0.0",
     "jest": "^26.4.2",
     "postcss": "^8.0.5"
-  },
-  "scripts": {
-    "test": "jest && npm run lint",
-    "lint": "eslint *.js",
-    "lint:fix": "eslint *.js --fix"
   }
 }
