@@ -1,6 +1,6 @@
 {
   "name": "postcss-page-break",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "PostCSS plugin postcss-page-break to fallback `break-` properties with `page-break-` alias",
   "keywords": [
     "postcss",
@@ -18,8 +18,8 @@
     "url": "https://github.com/shrpne/postcss-page-break/issues"
   },
   "homepage": "https://github.com/shrpne/postcss-page-break",
-  "dependencies": {
-    "postcss": "^7.0.2"
+  "peerDependencies": {
+    "postcss": "^8.0.5"
   },
   "devDependencies": {
     "eslint": "^7.9.0",
@@ -28,7 +28,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-unicorn": "^22.0.0",
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "postcss": "^8.0.5"
   },
   "scripts": {
     "test": "jest && npm run lint",

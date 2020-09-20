@@ -68,6 +68,11 @@ break-after: initial      =>  page-break-after: initial;
 break-after: unset        =>  page-break-after: unset;
 ```
 
+## Installation
+```bash
+npm install --save-dev postcss postcss-page-break
+```
+
 
 ## Usage
 
