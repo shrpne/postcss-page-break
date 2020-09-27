@@ -1,8 +1,8 @@
 module.exports = function(options) {
     return {
         postcssPlugin: 'postcss-page-break',
-        Root(root) {
-            root.walkDecls(/^break-(inside|before|after)/, function(decl) {
+        Declaration(decl) {
+            if (decl.prop.startsWith('break-') && /^break-(inside|before|after)/.test(decl.prop)) {
                 // do not process column|region related properties
                 if (decl.value.search(/column|region/) >= 0) {
                     return;
@@ -20,11 +20,13 @@ module.exports = function(options) {
                         newValue = decl.value;
                 }
 
-                decl.cloneBefore({
-                    prop: 'page-' + decl.prop,
-                    value: newValue,
-                });
-            });
+                if (decl.parent.every(i => i.prop !== 'page-' + decl.prop)) {
+                    decl.cloneBefore({
+                        prop: 'page-' + decl.prop,
+                        value: newValue,
+                    });
+                }
+            }
         },
     };
 
