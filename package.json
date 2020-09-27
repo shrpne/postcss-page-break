@@ -21,11 +21,13 @@
   ],
   "author": "shrpne <shrpne@gmail.com>",
   "license": "MIT",
-  "repository": "shrpne/postcss-page-break",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/shrpne/postcss-page-break"
+  },
   "bugs": {
     "url": "https://github.com/shrpne/postcss-page-break/issues"
   },
-  "homepage": "https://github.com/shrpne/postcss-page-break",
   "peerDependencies": {
     "postcss": "^8"
   },
