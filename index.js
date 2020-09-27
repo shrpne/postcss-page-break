@@ -20,9 +20,10 @@ module.exports = function(options) {
                         newValue = decl.value;
                 }
 
-                if (decl.parent.every(i => i.prop !== 'page-' + decl.prop)) {
+                const newProperty = 'page-' + decl.prop;
+                if (decl.parent.every((sibling) => sibling.prop !== newProperty)) {
                     decl.cloneBefore({
-                        prop: 'page-' + decl.prop,
+                        prop: newProperty,
                         value: newValue,
                     });
                 }
